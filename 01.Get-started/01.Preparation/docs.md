@@ -29,8 +29,9 @@ available or not:
 1. [Prepare a Raspberry Pi device](./01.Prepare-a-Raspberry-Pi-device/docs.md) (**recommended**)
 
   Due to the popularity of Raspberry Pi devices our reference environment is
-  optimized for evaluation on this specific device using Raspbian as operating
-  system. This environment should already be familiar to most people.
+  optimized for evaluation on this specific device using Raspberry Pi OS
+  (previously called Raspbian) as operating system. This environment should
+  already be familiar to most people.
 
 1. [Prepare a virtual device](./02.Prepare-a-virtual-device/docs.md)
 

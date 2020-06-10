@@ -7,9 +7,10 @@ taxonomy:
 !!! If you do not have have a Raspberry Pi, please go to
 !!! [Prepare a virtual device](../02.Prepare-a-virtual-device/docs.md).
 
-In this guide we will prepare a Raspberry Pi with a custom Raspbian OS image.
-The only difference from the official Raspbian image is that it has been
-converted to support robust system updates with Mender.
+In this guide we will prepare a Raspberry Pi with a custom Raspberry Pi OS
+(previously called Raspbian) image. The only difference from the official
+Raspberry Pi OS image is that it has been converted to support robust system
+updates with Mender.
 
 ## Prerequisites
 
@@ -25,19 +26,19 @@ To follow this guide, you will need the following:
 
 ## Step 1 - Flash the Raspberry Pi
 
-Download the Raspbian OS image with Mender integrated:
-  * Download link: [Raspberry Pi 3 Model B and B+][raspbian-buster-lite-raspberrypi3-mender.img.xz]
-  * Download link: [Raspberry Pi 4 Model B][raspbian-buster-lite-raspberrypi4-mender.img.xz]
+Download the Raspberry Pi OS image with Mender integrated:
+  * Download link: [Raspberry Pi 3 Model B and B+][raspios-buster-lite-raspberrypi3-mender.img.xz]
+  * Download link: [Raspberry Pi 4 Model B][raspios-buster-lite-raspberrypi4-mender.img.xz]
 
 <!--AUTOVERSION: "mender-%.img.xz"/mender-convert-client -->
-[raspbian-buster-lite-raspberrypi3-mender.img.xz]: https://d4o6e0uccgv40.cloudfront.net/2020-02-05-raspbian-buster-lite/arm/2020-02-05-raspbian-buster-lite-raspberrypi3-mender-master.img.xz
-[raspbian-buster-lite-raspberrypi4-mender.img.xz]: https://d4o6e0uccgv40.cloudfront.net/2020-02-05-raspbian-buster-lite/arm/2020-02-05-raspbian-buster-lite-raspberrypi4-mender-master.img.xz
+[raspios-buster-lite-raspberrypi3-mender.img.xz]: https://d4o6e0uccgv40.cloudfront.net/2020-05-27-raspios-buster-lite-armhf/arm/2020-05-27-raspios-buster-lite-armhf-raspberrypi3-mender-master.img.xz
+[raspios-buster-lite-raspberrypi4-mender.img.xz]: https://d4o6e0uccgv40.cloudfront.net/2020-05-27-raspios-buster-lite-armhf/arm/2020-05-27-raspios-buster-lite-armhf-raspberrypi4-mender-master.img.xz
 
-Follow the steps outlined in the [Raspbian documentation](https://www.raspberrypi.org/documentation/installation/installing-images?target=_blank)
+Follow the steps outlined in the [Raspberry Pi OS documentation](https://www.raspberrypi.org/documentation/installation/installing-images?target=_blank)
 to flash the OS image to the device.
 
 It is recommended to use the Raspberry Pi Imager tool, choose "Use custom" and
-browse to the downloaded Mender Raspbian image.
+browse to the downloaded Mender Raspberry Pi OS image.
 
 ![connecting a device](image1.png)
 
@@ -48,7 +49,7 @@ Boot the Raspberry Pi with the newly flashed SD card and
 
 If you do not know the IP address of your Raspberry Pi device, there are some
 great resources in the
-[Raspbian documentation](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
+[Raspberry Pi OS documentation](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 on different ways of looking this up.
 
 SSH into your device:
