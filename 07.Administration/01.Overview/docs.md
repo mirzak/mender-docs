@@ -7,9 +7,7 @@ taxonomy:
 Mender backend is composed of a number of microservices, each implementing a
 small, well defined piece of functionality.
 
-The integration environment, previously used
-in [Create a test environment](../../getting-started/on-premise-installation/create-a-test-environment)
-chapter, brings together the following services:
+The integration environment, brings together the following services:
 
 - [Mender Device Authentication Service](https://github.com/mendersoftware/deviceauth?target=_blank)
 - [Mender Deployment Service](https://github.com/mendersoftware/deployments?target=_blank)

@@ -10,7 +10,7 @@ only applies when the Mender server is [installed for production](../../administ
 
 ## Persistent certificate errors in demo mode
 Since the demo certificates are self-signed, browsers will produce relevant warnings.
-For instance in Chrome, a `Your connection is not private` page will appear, with a 
+For instance in Chrome, a `Your connection is not private` page will appear, with a
 `NET::CERT_AUTHORITY_INVALID` error.
 
 Typically this page comes with 'Advanced' options, allowing you to accept the certificate
@@ -34,17 +34,6 @@ To clean up the deviceauth database, run the following from within the integrati
 ```
 docker exec $(docker ps -q -n 1 -f 'name=device-auth') /usr/bin/deviceauth maintenance --decommissioning-cleanup
 ```
-
-## The virtual QEMU device is not showing up in demo mode
-
-When running the Mender server in demo mode, as described in the [getting started tutorial](../../getting-started/on-premise-installation),
-the help tips in the UI give you an option to connect a virtual `qemux86-64` to the server for demo purposes.
-
-If you have trouble connecting this virtual device, please make sure your environment meets the resource requirements
-to run the Mender Server. In particular, it is known that the virtual device will not
-start if you do not have enough memory.
-
-!!! The console of the virtual device can be seen by running `./demo --client logs mender-client`.
 
 ## A device shows up as pending after preauthorizing it
 If you see your device gets the `pending` status after [preauthorizing it](../../server-integration/preauthorizing-devices), something went wrong. Most likely there is a mismatch between the identity and public key [you preauthorized](../../server-integration/preauthorizing-devices#call-the-preauthorize-api) and what your Mender client is actually using.

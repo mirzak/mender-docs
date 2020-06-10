@@ -53,8 +53,8 @@ created a `keygen` script that leverages the `openssl` utility to do
 the heavy lifting. It is available in
 [Mender's Integration GitHub repository](https://github.com/mendersoftware/integration?target=_blank).
 
-Open a terminal and go to the directory where you cloned the integration repository
-as part of the [tutorial to create a test environment](../../getting-started/on-premise-installation/create-a-test-environment).
+Open a terminal and go to the directory where you cloned the integration
+repository.
 
 In order to generate the self-signed certificates, the script needs to know
 what the CN (Common Name) of the two certificates should be, i.e. which URL
