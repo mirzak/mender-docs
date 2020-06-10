@@ -4,13 +4,16 @@ taxonomy:
     category: docs
 ---
 
-The steps necessary to deploy application updates are described in the hosted
-Mender UI as tooltips and this guide is only here as a reference if you need
-additional guidance or would like to get an overview of the steps.
+To deploy an application update you should follow the UI tooltips presented on
+hosted Mneder.
+
+This tutorial is only here as a reference if you need additional guidance or
+would like to get an overview of the steps necessary to deploy an application
+update.
 
 ## Prerequisites
 
-It is assumed that you have completed one of the following:
+You should have completed one of the following:
 
 * [Prepare a Raspberry Pi device](../01.Preparation/01.Prepare-a-Raspberry-Pi-device/docs.md)
 * [Prepare a virtual device](../01.Preparation/02.Prepare-a-virtual-device/docs.md)
@@ -62,7 +65,8 @@ instructions showed on the pop-up and click the **NEXT** button when done.
 
 ![Upload web page](Image_13.png)
 
-Click the **UPLOAD** button to upload the file that was created in previous step.
+Click the **UPLOAD** button to upload the file that you created in the previous
+step.
 
 ![Upload web page](Image_14.png)
 
@@ -70,10 +74,10 @@ Drag-and-drop or click **browse** to select the file for upload.
 
 ![Upload web page](Image_15.png)
 
-When you upload a single file to the Mender server, a wizard is started to
+When you upload a single file to the Mender server, you will get a wizard to
 create a [Mender Artifact](../../02.Architecture/04.Mender-Artifacts/docs.md)
-of the type `file`, which allows you deploy single files to your device. The
-fields are prefilled by the UI during the evaluation and you can click **NEXT**.
+of the type `file`, which allows you deploy single files to your device. You can
+use the default values prefilled by the Mender UI and click **NEXT**.
 
 ![Upload web page](Image_16.png)
 
@@ -93,20 +97,20 @@ two mandatory fields:
   - Input is a free form string, you can use e.g `hello-world` for evaluation
     purposes
 
-Once all required fields are filled, click the **UPLOAD** button.
+Fill out the required fields and click the **UPLOAD** button.
 
 ![Upload web page](Image_18.png)
 
 You now have a new Artifact under the **Releases** tab. Use the new Artifact
 to create a deployment by clicking **CREATE DEPLOYMENT WITH THIS RELEASE** and
-click trough the deployment wizard, similarly to what was done in
+click trough the deployment wizard, similarly to what you did in
 [Step 1 - Create a Deployment](#step-1-create-a-deployment).
 
 ![Upload web page](Image_19.png)
 
-Once the deployment finishes you will once again be presented with a link to
-running web application running on your device. By following the presented
-link you will see an updated landing page which you created earlier.
+Once the deployment finishes you will once again see a link to running web
+application running on your device. By following the presented link you will
+see an updated landing page which you created earlier.
 
 ![Upload web page](Image_20.png)
 

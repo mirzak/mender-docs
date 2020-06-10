@@ -55,11 +55,11 @@ will appear on the Device groups tab on the left of Pending.
 
 ## Step 5 - Get the IP address of the virtual device
 
-The IP address of the virtual device will be needed in later stages of
-the documentation.
+You will need the the IP address of the virtual device in later stages of the
+documentation.
 
-Commands listed below need to be executed in a new terminal window while the
-virtual device is running.
+You should execute below commands in a terminal window on your workstation while
+the virtual device is running.
 
 List running containers:
 
@@ -75,8 +75,7 @@ Example output:
 >d335f50101cb        mendersoftware/mender-client-qemu:latest   "./entrypoint.sh"   6 minutes ago       Up 6 minutes        8822/tcp            relaxed_leakey
 >```
 
-Save the `CONTAINER ID` in a shell variable. It will be used to find
-information about the running container:
+Save the `CONTAINER ID` in a shell variable:
 
 ```bash
 CONTAINER_ID="d335f50101cb"

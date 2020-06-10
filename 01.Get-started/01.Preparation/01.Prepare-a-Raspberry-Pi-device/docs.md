@@ -37,7 +37,7 @@ Download the Raspberry Pi OS image with Mender integrated:
 Follow the steps outlined in the [Raspberry Pi OS documentation](https://www.raspberrypi.org/documentation/installation/installing-images?target=_blank)
 to flash the OS image to the device.
 
-It is recommended to use the Raspberry Pi Imager tool, choose "Use custom" and
+We recommended to use the Raspberry Pi Imager tool, choose "Use custom" and
 browse to the downloaded Mender Raspberry Pi OS image.
 
 ![connecting a device](image1.png)

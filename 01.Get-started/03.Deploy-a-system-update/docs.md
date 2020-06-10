@@ -12,7 +12,7 @@ as power loss.
 
 ## Prerequisites
 
-It is assumed you:
+You should:
 
 * have completed [Deploy an application update](../02.Deploy-an-application-update/docs.md)
 * know the IP address of your device
@@ -44,8 +44,8 @@ Add `${HOME}/bin` to `PATH`:
 export PATH="${PATH}:${HOME}/bin"
 ```
 
-!!! The above should be added to `~/.bashrc` or equivalent to make it persistent
-!!! across multiple terminal sessions.
+!!! Add above to `~/.bashrc` or equivalent to make it persistent across multiple
+!!! terminal sessions.
 
 ## Step 2 - Setup shell variables on your workstation
 
@@ -65,9 +65,9 @@ USER="pi"
 !!! Use `USER="root"` if you are using a virtual device
 
 [Mender Artifact's](../../02.Architecture/04.Mender-Artifacts/docs.md) require
-a device compatibility field to be entered which **must** match what the device
-is reporting to the Mender server or it will refuse to install it. This is a
-safety mechanism to avoid installing software to incompatible hardware.
+a device compatibility value as input, which **must** match what the device is
+reporting to the Mender server or it will refuse to install it. This is a safety
+mechanism to avoid installing software to incompatible hardware.
 
 If you are unsure, you can check what the device is reporting on the server:
 
@@ -111,7 +111,7 @@ mender-artifact write rootfs-image \
     -S "${SSH_ARGS}"
 ```
 
-! You might be asked to enter the password of the user account on your device.
+! You might need to enter the password of the user account on your device.
 
 
 ! Your device is not usable while the snapshot operation is in progress. Mender
@@ -132,8 +132,8 @@ demonstrated below.
 Once uploaded, go to the **DEPLOYMENTS** tab and click **CREATE DEPLYOMENT** in
 order to deploy it to your device.
 
-It is encouraged to experiment at this stage to familiarize yourself with robust
-system updates with Mender.
+Please take a moment to experiment at this stage to familiarize yourself with
+robust system updates with Mender.
 
 As an example you can iterate this flow:
 
@@ -157,7 +157,7 @@ To read more about system snapshots see the documentation on
 [Artifact from system snapshot](../../04.Artifacts/22.Snapshots/docs.md).
 
 Using the **snapshot** feature is one way to create system updates and additional
-resources on more advanced ways can be found here:
+resources on more advanced ways you will find here:
 
 1. [Building a Mender Yocto Project image](../../04.Artifacts/10.Yocto-project/01.Building/docs.md)
 2. [Building a Mender Debian image](../../04.Artifacts/15.Debian-family/01.building-a-mender-debian-image/docs.md)

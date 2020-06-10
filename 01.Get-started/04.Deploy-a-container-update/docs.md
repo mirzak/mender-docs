@@ -92,8 +92,8 @@ Add `${HOME}/bin` to `PATH`:
 export PATH="${PATH}:${HOME}/bin"
 ```
 
-!!! The above should be added to `~/.bashrc` or equivalent to make it persistent
-!!! across multiple terminal sessions.
+!!! Add above to `~/.bashrc` or equivalent to make it persistent across multiple
+!!! terminal sessions.
 
 
 ## Step 3 - Prepare a Mender Artifact on your workstation
@@ -159,8 +159,8 @@ will see that there is a image downloaded on the device:
 
 The [Docker Update Module](https://hub.mender.io/t/docker/324?target=blank) will
 download the specified images from e.g https://hub.docker.io. It will not
-stop or start the images. This is a reference module and is intended to be used
-as a starting point to develop your own Docker container update strategy.
+stop or start the images. This is a reference module, intended  as a starting
+point to develop your own Docker container update strategy.
 
 The [Kubernetes Update Module](https://hub.mender.io/t/kubernetes/1939) is very
 similar and instead allows deployment of Kubernetes manifesto files.
