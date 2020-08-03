@@ -60,7 +60,7 @@ Configuration key 'ServerURL', found in mender.conf, conflicts with MENDER_SERVE
 
 If you do not want Mender to run as a system service, and you prefer to carry out update steps manually using the command line client interface, you can disable the service that starts Mender at boot.
 
-This is simple to accomplish by adding a `recipes-mender/mender/mender_%.bbappend` file in your Yocto Project layer, with the following content:
+This is simple to accomplish by adding a `recipes-mender/mender/mender-client_%.bbappend` file in your Yocto Project layer, with the following content:
 
 ```bash
 SYSTEMD_AUTO_ENABLE = "disable"

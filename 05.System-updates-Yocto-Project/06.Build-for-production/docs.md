@@ -54,7 +54,7 @@ The best way to include the certificate in the client build is to use a custom b
 
 #### Using a layer
 
-Put the certificate inside your own layer, under `recipes-mender/mender/files/server.crt`. Then create the file `recipes-mender/mender/mender_%.bbappend`. Inside this file, add the following content:
+Put the certificate inside your own layer, under `recipes-mender/mender/files/server.crt`. Then create the file `recipes-mender/mender/mender-client_%.bbappend`. Inside this file, add the following content:
 
 ```bash
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
